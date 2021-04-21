@@ -1,10 +1,166 @@
-@media (min-width: 767.98px){
-  .container {
-    max-width: 720px;
-  }
-}
-@media (min-width: 991.98px) {
+@media (min-width: 799.98px) {
   .container {
     max-width: 770px;
+  }
+  .header{
+  	.container{
+  		max-width: 1170px;
+  	}
+  }
+  .menu{
+  	display: block;
+  	position: static;
+  	&__list{
+  		background: unset;
+  		flex-direction: row;
+  		padding-top: 0;
+  	}
+  	&__item{
+  		width: 100%;
+  		margin-bottom: 0;
+  		margin-left: 50px;
+  	}
+  }
+  .callback{
+  	&__item{
+  		padding: 5px 10px;
+  	}
+  }
+  .burger{
+  	display: none;
+  }
+  .main-screen{
+  	background-position: bottom right;
+  	&__inner{
+  		padding: 130px 0 150px 0;
+  	}
+  	&__title{
+  		text-align: left;
+  		font-size: 48px;
+  		line-height: 50px;
+  		max-width: 569px;
+  	}
+  }
+  .title{
+  	font-size: 40px;
+  	line-height: 50px;
+  }
+  .result{
+  	&__title{
+  		margin-bottom: 25px;
+  	}
+  	&__mark-box{
+  		display: flex;
+  		justify-content: space-between;
+  		align-items: center;
+  		margin-bottom: 25px;
+  	}
+  	&__mark{
+  		font-size: 26px;
+  		line-height: 35px;
+  		margin-bottom: 0;
+  	}
+  }
+  .view-more{
+  	font-size: 19px;
+  	line-height: 30px;
+  	margin-bottom: 0;
+  }
+  .text{
+  	font-size: 19px;
+  	line-height: 30px;
+  }
+  .name {
+  	font-size: 19px;
+  	line-height: 30px;
+  }
+  .accordion{
+  	
+  	&__name{
+  		padding-left: 30px;
+  		width: 60%;
+  		&::after{
+  			right: 0;
+  			left: 0;
+  		}
+  	}
+  	&__head{
+  		flex-direction: row;
+  		padding: 15px 0;
+  	}
+  	&__body{
+  		margin-left: 30px;
+  	}
+  	&__result{
+  		width: 29%;
+  	}
+  }
+  .sentences{
+  	&__item{
+  		position: relative;
+  		padding-bottom: 30px;
+  	}
+  	&__name{
+  		padding: 25px;
+  	}
+  	&__list{
+  		padding-left: 25px;
+
+  	}
+  	&__list-item{
+  		&::after{
+  			top: 16px;
+  		}
+  	}
+  	&__heading{
+  		padding-left: 25px;
+  		font-size: 19px;
+  		line-height: 30px;	
+  	}
+  	&__text{
+  		padding-left: 25px;
+  	}
+  	&__get-consult{
+  		position: absolute;
+  		top: 0;
+  		right: 0;
+  		width: 60%;
+  	}
+  }
+  .we-recommend{
+  	&__card{
+  		margin-bottom: 30px;
+  	padding: 20px 25px;	
+  	}
+  	&__content{
+  		> *{
+  			flex: 0 1 360px;
+  		}
+  	}
+  	
+  }
+  .footer{
+  	.container{
+  		max-width: 1170px;
+  	}
+  	&__inner{
+  		flex-direction: row-reverse;
+  		align-items: center;
+  		justify-content: space-between;
+  	}
+  	&__list{
+  		flex-direction: row;
+  	}
+  	&__item{
+  		margin-bottom: 0;
+  		padding-right: 5px;
+  		margin-left: 5px;
+  		&:not(:last-child){
+  			border-right: 1px solid #fff;
+  		}
+  	}
+  }
+  .to-top{
+  	margin-bottom: 0;
   }
 }
