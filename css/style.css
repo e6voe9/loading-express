@@ -197,9 +197,9 @@ html {
   transform: translateX(-50%);
 }
 .background-box__phone-screen {
-  max-width: 134px;
+  max-width: 129px;
   position: absolute;
-  bottom: -3px;
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -314,6 +314,7 @@ html {
   display: none;
 }
 .accordion__text {
+  display: block;
   padding: 10px 0;
 }
 .accordion__text a {
