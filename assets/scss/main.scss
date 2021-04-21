@@ -155,23 +155,25 @@
 	}
     &__head {
     	padding: 10px 0;
+        position: relative;
     	display: flex;
     	flex-direction: column;
+        &::after{
+            content: '+';
+            font-family: 'Play';
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 35px;
+        }
     }
 
     &__name {
     	position: relative;
     	width: 100%;
     	margin-bottom: 5px;
-    	&::after{
-    		content: '+';
-    		font-family: 'Play';
-    		position: absolute;
-    		right: 5px;
-    		top: 50%;
-    		transform: translateY(-50%);
-    		font-size: 35px;
-    	}
+    	
     }
 
     &__result {
@@ -215,6 +217,9 @@
     }
     input:checked ~ .accordion__body{
     	display: block;
+    }
+    input:checked ~ .accordion__head::after{
+        content: '-';
     }
 }
 

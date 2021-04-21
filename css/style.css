@@ -235,15 +235,11 @@ html {
 }
 .accordion__head {
   padding: 10px 0;
+  position: relative;
   display: flex;
   flex-direction: column;
 }
-.accordion__name {
-  position: relative;
-  width: 100%;
-  margin-bottom: 5px;
-}
-.accordion__name::after {
+.accordion__head::after {
   content: "+";
   font-family: "Play";
   position: absolute;
@@ -251,6 +247,11 @@ html {
   top: 50%;
   transform: translateY(-50%);
   font-size: 35px;
+}
+.accordion__name {
+  position: relative;
+  width: 100%;
+  margin-bottom: 5px;
 }
 .accordion__result {
   display: flex;
@@ -287,6 +288,9 @@ html {
 }
 .accordion input:checked ~ .accordion__body {
   display: block;
+}
+.accordion input:checked ~ .accordion__head::after {
+  content: "-";
 }
 
 .name {
@@ -521,13 +525,13 @@ html {
     padding-left: 30px;
     width: 60%;
   }
-  .accordion__name::after {
-    right: 0;
-    left: 0;
-  }
   .accordion__head {
     flex-direction: row;
     padding: 15px 0;
+  }
+  .accordion__head::after {
+    right: 0;
+    left: 0;
   }
   .accordion__body {
     margin-left: 30px;

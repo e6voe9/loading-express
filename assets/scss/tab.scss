@@ -79,14 +79,14 @@
   	&__name{
   		padding-left: 30px;
   		width: 60%;
-  		&::after{
-  			right: 0;
-  			left: 0;
-  		}
   	}
   	&__head{
   		flex-direction: row;
   		padding: 15px 0;
+      &::after{
+        right: 0;
+        left: 0;
+      }
   	}
   	&__body{
   		margin-left: 30px;
