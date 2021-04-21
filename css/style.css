@@ -160,11 +160,12 @@ html {
 }
 
 .main-screen {
-  background: url(../img/main-screen__bg.png), linear-gradient(0deg, #52617A 0%, #1B2638 100%);
+  background: linear-gradient(0deg, #52617A 0%, #1B2638 100%);
   background-repeat: no-repeat;
-  background-position: center bottom;
+  overflow: hidden;
 }
 .main-screen__inner {
+  position: relative;
   padding: 67px 0 280px 0;
 }
 .main-screen__title {
@@ -176,6 +177,38 @@ html {
 }
 .main-screen__title--blue {
   color: #01A0E2;
+}
+
+.background-box {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.background-box__phone {
+  position: relative;
+  z-index: 2;
+}
+.background-box__phone-shape {
+  max-width: 168px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background-box__phone-screen {
+  max-width: 134px;
+  position: absolute;
+  bottom: -3px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.background-box__bg {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 450px;
 }
 
 .result__inner {
@@ -464,11 +497,8 @@ html {
     display: none;
   }
 
-  .main-screen {
-    background-position: bottom right;
-  }
   .main-screen__inner {
-    padding: 130px 0 150px 0;
+    padding: 130px 0 70px 0;
   }
   .main-screen__title {
     text-align: left;
@@ -595,5 +625,9 @@ html {
 
   .to-top {
     margin-bottom: 0;
+  }
+
+  .background-box {
+    right: -240px;
   }
 }

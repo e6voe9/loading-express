@@ -30,9 +30,8 @@
   	display: none;
   }
   .main-screen{
-  	background-position: bottom right;
   	&__inner{
-  		padding: 130px 0 150px 0;
+  		padding: 130px 0 70px 0;
   	}
   	&__title{
   		text-align: left;
@@ -166,4 +165,11 @@
   .to-top{
   	margin-bottom: 0;
   }
+.background-box {
+    right: -240px;
+}
+
+
+
+
 }
