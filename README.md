@@ -1,4 +1,4 @@
 # loading-express
-##landing page
+## landing page
 Accordion, nav menu ... all without javascript
 No animations, max performance
