@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Loading Express</title>
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- styles -->
+</head>
+
+<body>
+    <!-- header -->
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <div class="logo">
+                    <a href="#" class="logo__link">
+                        <img width="160" height="20" src="img/icons/logo.svg" alt="logo in header" class="logo__img">
+                    </a>
+                </div>
+                <input id="nav-btn" type="checkbox" hidden>
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="tel:+89992024858" class="menu__link">
+                                <img src="img/icons/phone.svg" alt="phone in header">
+                                <span>8 (999) 202-48-58</span>
+                            </a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="mailto:sale@loading.express" class="menu__link">
+                                <img src="img/icons/mail.svg" alt="mail in header">
+                                <span>sale@loading.express</span>
+                            </a>
+                        </li>
+                        <li class="callback menu__item">
+                            <a href="#" class="callback__item menu__link">
+                                Обратный звонок
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <label for="nav-btn" class="burger">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                </label>
+                <label for="nav-btn" class="burger burger--active">
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                    <div class="burger__item"></div>
+                </label>
+            </div>
+        </div>
+    </header>
+    <!-- header -->
+    <main id="root">
+        <section class="main-screen">
+            <div class="container">
+                <div class="main-screen__inner">
+                    <h1 class="main-screen__title">Рекомендации <br> по ускорению сайта <span class="main-screen__title--blue">www.glamusha.ru</span></h1>
+                </div>
+            </div>
+        </section>
+        <section class="result">
+            <div class="container">
+                <div class="result__inner">
+                    <h1 class="title result__title">Текущие показатели скорости сайта по оценке LOADING.express</h1>
+                    <span class="result__mark result__mark--green">Оценка: 8/10</span>
+                    <a href="#" class="view-more"><span>Смотреть подробный отчёт </span><img src="img/icons/link.svg" alt="link view more"></a>
+                    <p class="text result__text">Наши сервера проверяют скорость из Москвы, Санкт-Петербурга и других городов РФ и Минска. Если замер из Москвы, то ваш сайт до полной загрузки доходит за ~4.9 сек. Наш сервис искусственно замедляет устройство в два раза и сеть до уровня быстрого 3G.</p>
+                    <label class="accordion accordion--first">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Ответ сервера</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">39 <span>мс.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Время загрузки всех ресурсов</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">0.3 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Первая отрисовка страницы</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">1239 <span>мс.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Максимальная задержка ввода</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">83 <span>мс.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Время выполнения JS</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">569 <span>мс.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Время до взаимодействия</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">4.9 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--red">Превышает норму</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="result">
+            <div class="container">
+                <div class="result__inner">
+                    <h1 class="title result__title">Текущие показатели скорости сайта по оценке Google PageSpeed Insights</h1>
+                    <span class="result__mark result__mark--red">Оценка: 74/100</span>
+                    <a href="#" class="view-more">Смотреть подробный отчёт <img src="img/icons/link.svg" alt="link view more"></a>
+                    <p class="text result__text">Проверка осуществляется с серверов Google, которые могут находиться в любой стране Евросоюза. Чаще всего замеры происходят из Швейцарии и Нидерландов. В данном случае, ваш сайт полностью готов к взаимодействию с пользователем через ~4.7 сек. после начала загрузки. Google искусственно замедляет устройство в четыре раза и сеть до уровня среднего 3G.</p>
+                    <label class="accordion accordion--first">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Время загрузки первого контента (FCP)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">0.9 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В зелёной зоне</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Время загрузки для взаимодействия (TTI)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">4.7 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В зелёной зоне</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Индекс скорости загрузки (Speed Index)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">2.4 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--yellow">В жёлтой зоне</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Общее время блокировки (TBT)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">180 <span>мс.</span></span>
+                                <span class="accordion__mark accordion__mark--green">В норме</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Сумма всех периодов от первой отрисовки контента до загрузки для взаимодействия, когда время выполнения задач превышало 50 мс. Идеальный показатель до 200 мс. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Отрисовка крупного контента (LCP)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">6.4 <span>сек.</span></span>
+                                <span class="accordion__mark accordion__mark--red">В красной зоне</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                    <label class="accordion">
+                        <span class="accordion__head">
+                            <span class="name accordion__name">Совокупное смещение макета (CLS)</span>
+                            <span class="accordion__result">
+                                <span class="accordion__time">0</span>
+                                <span class="accordion__mark accordion__mark--green">В зелёной зоне</span>
+                            </span>
+                        </span>
+                        <input type="checkbox" hidden>
+                        <span class="accordion__body">
+                            <p class="text accordion__text">Время выполнения всех скриптов на странице, необходимых для отрисовки страницы. Не должно превышать 2000 миллисекунд. <a href="#">Ссылка</a></p>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </section>
+        <section class="sentences">
+            <div class="container">
+                <div class="sentences__inner">
+                    <h1 class="title sentences__title">Наши предложения по ускорению</h1>
+                    <div class="sentences__item">
+                        <h2 class="name sentences__name">Вариант 1</h2>
+                        <span class="sentences__heading">Что сделать</span>
+                        <ul class="sentences__list">
+                            <li class="text sentences__list-item">настроить preload для статики;</li>
+                            <li class="text sentences__list-item">отложить сторонние скрипты;</li>
+                            <li class="text sentences__list-item">оптимизировать подключение шрифтов;</li>
+                        </ul>
+                        <span class="sentences__heading">Стоимость</span>
+                        <p class="text sentences__text">Все работы под ключ с гарантией результата в 45 дней = от 39 000 ₽</p>
+                        <span class="sentences__heading">Срок</span>
+                        <p class="text sentences__text">Срок выполнения работ, по договору, 3-7 рабочих дней.</p>
+                        <span class="sentences__heading">Результат</span>
+                        <p class="text sentences__text">Google PageSpeed insights: 80 - 85 баллов из 100 по мобильной версии.</p>
+                        <div class="sentences__get-consult">
+                            <span class="text">Получить консультацию</span>
+                            <a href="t.me/e6voe9">
+                                <img width="36" height="36" src="img/icons/telegram.svg" alt="telegram">
+                            </a>
+                            <a href="wa.me/">
+                                <img width="32" height="32" src="img/icons/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="facebook.com">
+                                <img width="40" height="40" src="img/icons/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sentences__item">
+                        <h2 class="name sentences__name">Вариант 2</h2>
+                        <span class="sentences__heading">Что сделать</span>
+                        <ul class="sentences__list">
+                            <li class="text sentences__list-item">настроить preload для статики;</li>
+                            <li class="text sentences__list-item">отложить сторонние скрипты;</li>
+                            <li class="text sentences__list-item">оптимизировать подключение шрифтов;</li>
+                            <li class="text sentences__list-item">оптимизировать CSS;</li>
+                            <li class="text sentences__list-item">оптимизировать JS;</li>
+                            <li class="text sentences__list-item">сжать изображения;</li>
+                            <li class="text sentences__list-item">если есть доступ к серверу и на сервере старое программное обеспечение — обновить.</li>
+                        </ul>
+                        <span class="sentences__heading">Стоимость</span>
+                        <p class="text sentences__text">Все работы под ключ с гарантией результата в 45 дней = от 73 000 ₽</p>
+                        <span class="sentences__heading">Срок</span>
+                        <p class="text sentences__text">Срок выполнения работ, по договору, 7-14 рабочих дней.</p>
+                        <span class="sentences__heading">Результат</span>
+                        <p class="text sentences__text">Google PageSpeed insights: 85 - 95 баллов из 100 по мобильной версии.</p>
+                        <div class="sentences__get-consult">
+                            <span class="text">Получить консультацию</span>
+                            <a href="t.me/e6voe9">
+                                <img width="36" height="36" src="img/icons/telegram.svg" alt="telegram">
+                            </a>
+                            <a href="wa.me/">
+                                <img width="32" height="32" src="img/icons/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="facebook.com">
+                                <img width="40" height="40" src="img/icons/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sentences__item">
+                        <h2 class="name sentences__name">Вариант 3</h2>
+                        <span class="sentences__heading">Что сделать</span>
+                        <p class="text sentences__text">Сделать с нуля тоже самое, но очень быстрое и современное. Полностью переделать тему/верстку с сохранением всего функционала.</p>
+                        <span class="sentences__heading">Стоимость</span>
+                        <p class="text sentences__text">Примерная стоимость от 320 т. р., зависит от функционала, который не виден без всех доступов и без ТЗ.</p>
+                        <span class="sentences__heading">Срок</span>
+                        <p class="text sentences__text">Срок выполнения работ, по договору, 6-8 недель.</p>
+                        <span class="sentences__heading">Результат</span>
+                        <p class="text sentences__text">Google PageSpeed insights: 80 - 85 баллов из 100 по мобильной версии.</p>
+                        <div class="sentences__get-consult">
+                            <span class="text">Получить консультацию</span>
+                            <a href="t.me/e6voe9">
+                                <img width="36" height="36" src="img/icons/telegram.svg" alt="telegram">
+                            </a>
+                            <a href="wa.me/">
+                                <img width="32" height="32" src="img/icons/facebook.svg" alt="facebook">
+                            </a>
+                            <a href="facebook.com">
+                                <img width="40" height="40" src="img/icons/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="we-recommend">
+            <div class="container">
+                <div class="we-recommend__inner">
+                    <h1 class="title we-recommend__title">Мы рекомендуем</h1>
+                    <div class="we-recommend__content">
+                        <div class="we-recommend__card">
+                            <h2 class="name we-recommend__name">Автопроверки</h2>
+                            <p class="text we-recommend__text">Автоматические проверки скорости вашего сайта каждые 15 минут из 5 городов России. В случае замедлений загрузки вам придет оповещение на почту.</p>
+                            <a href="#" class="we-recommend__link">Подробнее</a>
+                        </div>
+                        <div class="we-recommend__card">
+                            <h2 class="name we-recommend__name">Быстрый хостинг</h2>
+                            <p class="text we-recommend__text">Скорость сайта начинается с хостинга. Мы нашли и проверили лучший.</p>
+                            <a href="#" class="we-recommend__link">Подробнее</a>
+                        </div>
+                        <div class="we-recommend__card">
+                            <h2 class="name we-recommend__name">Подробный аудит</h2>
+                            <p class="text we-recommend__text">Мы сделаем подробную инструкцию с пошаговыми рекомендациями по ускорению загрузки вашего сайта.</p>
+                            <a href="#" class="we-recommend__link">Подробнее</a>
+                        </div>
+                        <div class="we-recommend__card">
+                            <h2 class="name we-recommend__name">Надёжный CDN</h2>
+                            <p class="text we-recommend__text">Посетители из разных городов России? Обязательно используйте это!</p>
+                            <a href="#" class="we-recommend__link">Подробнее</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <a class="to-top" href="#root"></a>
+                <ul class="footer__list">
+                    <li class="footer__item">
+                        <span>© 2020</span>Услуги по оптимизации сайтов
+                    </li>
+                    <li class="footer__item">Сделано в России с любовью</li>
+                    <li class="footer__item">Все права защищены</li>
+                    <li class="footer__item">По любым вопросам обращайтесь на <a href="mailto:hello@innovation-web.ru">hello@innovation-web.ru</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- footer -->
+</body>
+
+</html>

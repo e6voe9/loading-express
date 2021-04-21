@@ -1,0 +1,33 @@
+$dark: #00121A;
+$gray: #52617A;
+$pink: #D52055;
+$blue: #01A0E2;
+$green: #06B267;
+$red: #FC5048;
+$yellow: #FF8800;
+$title: #1B2638;
+$light: #F0F5F7;;
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+  -webkit-tap-highlight-color:transparent;
+  font-family: 'Play', sans-serif;
+}
+button,input,a,ul,li,ol {
+  border: none;
+  color: inherit;
+  background-color: transparent;
+  list-style-type: none;
+  text-decoration: none;
+}
+button{
+  cursor: pointer;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+html{
+  scroll-behavior: smooth;
+}
