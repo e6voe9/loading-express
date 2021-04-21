@@ -122,7 +122,7 @@
   	}
   	&__get-consult{
   		position: absolute;
-  		top: 0;
+  		top: 5px;
   		right: 0;
   		width: 60%;
   	}
@@ -133,6 +133,9 @@
   	padding: 20px 25px;	
   	}
   	&__content{
+      display: flex;
+      flex-wrap:wrap;
+      justify-content: space-between;
   		> *{
   			flex: 0 1 360px;
   		}

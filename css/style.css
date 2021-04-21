@@ -367,14 +367,6 @@ html {
   text-align: center;
   margin-bottom: 15px;
 }
-.we-recommend__content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.we-recommend__content > * {
-  flex: 0 1 340px;
-}
 .we-recommend__card {
   padding: 15px;
   background: #F0F5F7;
@@ -563,7 +555,7 @@ html {
   }
   .sentences__get-consult {
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
     width: 60%;
   }
@@ -571,6 +563,11 @@ html {
   .we-recommend__card {
     margin-bottom: 30px;
     padding: 20px 25px;
+  }
+  .we-recommend__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
   .we-recommend__content > * {
     flex: 0 1 360px;
